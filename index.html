@@ -17,15 +17,22 @@
       text-align: center;
     }
 
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .logo {
       width: 60%;
       max-width: 400px;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
 
-    p {
+    .email {
       opacity: 0.7;
+      margin: 0;
     }
 
     a {
@@ -36,9 +43,11 @@
   </style>
 </head>
 <body>
-  <div>
+  <div class="container">
     <img src="monologo.png" alt="Mono Logo" class="logo">
-    <p><a href="mailto:info@monomgmt.co.uk">info@monomgmt.co.uk</a></p>
+    <p class="email">
+      <a href="mailto:info@monomgmt.co.uk">info@monomgmt.co.uk</a>
+    </p>
   </div>
 </body>
 </html>
